@@ -1,0 +1,1 @@
+Static prompts use fixed instructions for every request, whereas dynamic prompts adapt their instructions or context based on user input, task requirements or changing information.
