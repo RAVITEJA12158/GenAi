@@ -30,3 +30,4 @@ for message in messages:
         print("Model:", message.content)
 print("direct")
 print(messages)
+# this is static type of the meessage

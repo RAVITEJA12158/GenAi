@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import Optional, Literal
+from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
 from dotenv import load_dotenv
 load_dotenv()
 model=ChatHuggingFace(llm=HuggingFaceEndpoint(

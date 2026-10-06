@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import Optional, Literal
+from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
 from dotenv import load_dotenv
 load_dotenv()
 model=ChatHuggingFace(llm=HuggingFaceEndpoint(
@@ -33,4 +34,4 @@ json_for={
 
 
 
-# here we can access the atteibutes by directly with the .name or if we want we can converrt it in to dic by dict(result) and to json model_dump_json
+# it wil be giving in the dict and the same process give it to the with_Structured_output and it will validate the output and if the output is not in the correct format it will raise an error.
