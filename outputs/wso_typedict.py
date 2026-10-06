@@ -15,3 +15,6 @@ class testing(TypedDict):
 aftermodel=model.with_structured_output(testing)
 result=aftermodel.invoke("""Anish is a 12 year old boy who loves to play football. He is very friendly and always helps his friends. He is also very good at academics and has won several awards in school competitions.""")   
 print(result)                    
+
+
+# the problem with this method is there is no validation of the output, if the model does not follow the structure of the TypedDict, it will still return the output without any error. This can lead to unexpected behavior and bugs in the code. It is important to validate the output of the model to ensure that it follows the expected structure and types.    
