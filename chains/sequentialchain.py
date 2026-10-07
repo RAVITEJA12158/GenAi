@@ -1,0 +1,3 @@
+# it is like normal chaining techniques, but it allows for more complex workflows by enabling the output of one chain to be used as the input for another. This can be particularly useful in scenarios where multiple steps are required to achieve a final result, and each step may depend on the output of the previous one.
+
+# till now the chains we used before this is an example for the sequnetial chain

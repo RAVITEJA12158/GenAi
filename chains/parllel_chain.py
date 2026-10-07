@@ -18,5 +18,12 @@ model=ChatHuggingFace(llm=HuggingFaceEndpoint(
     repo_id="deepseek-ai/DeepSeek-V4.1-Flash",  
     task="text-generation"
 ))
-parser=
+parser=StrOutputParser()
+parllel_chain=RunnableParallel({
+    'chain1':template1 | model | parser,
+    'chain2':template2 | model | parser
+})
+chain = parllel_chain|template2|model
+
+chain.get_graph().print_ascii()
 
